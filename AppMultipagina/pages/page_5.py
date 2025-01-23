@@ -3,7 +3,7 @@ import altair as alt
 import pandas as pd
 
 st.subheader("Gráfico de caja y bigotes")
-df = pd.read_csv("../Datos/quality_life_2020.csv", sep=";")
+df = pd.read_csv("AppMultipagina/Datos/quality_life_2020.csv", sep=";")
 
 # Selecciona la variabe a desplegar:
 # Crear un selector en la barra lateral para elegir la variable numérica a visualizar
@@ -21,6 +21,6 @@ box_plot = alt.Chart(df).mark_boxplot().encode(
 
 st.altair_chart(box_plot, use_container_width=True)
 
-st.page_link("pages/4_Histograma.py", label="⬅️ Regresar")
-st.page_link("pages/6_Grafica_de_dispersion.py", label="Siguiente ➡️")
+st.page_link("pages/page_4.py", label="⬅️ Regresar")
+st.page_link("pages/page_6.py", label="Siguiente ➡️")
 
