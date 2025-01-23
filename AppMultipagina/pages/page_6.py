@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 st.subheader("Gráfica de dispersión")
-df = pd.read_csv("../Datos/quality_life_2020.csv", sep=";")
+df = pd.read_csv("AppMultipagina/Datos/quality_life_2020.csv", sep=";")
 
 # Gráfica de dispersión
 
@@ -24,4 +24,4 @@ st.altair_chart(scatter_chart, use_container_width=True)
 
 st.write(f'Correlación entre {var_1} y {var_2}: {np.round(df[var_1].corr(df[var_2]), 2)}')
 
-st.page_link("pages/6_Grafica_de_dispersion.py", label="⬅️ Regresar")
+st.page_link("pages/page_5.py", label="⬅️ Regresar")
