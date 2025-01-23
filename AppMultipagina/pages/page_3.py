@@ -4,7 +4,7 @@ import pandas as pd
 
 st.subheader("Gráfica de barras")
 
-df = pd.read_csv("../Datos/quality_life_2020.csv", sep=";")
+df = pd.read_csv("AppMultipagina/Datos/quality_life_2020.csv", sep=";")
 # Agregar un switch que cambie entre los 10 primeros o los últimos 10
 # Agregar un switch que permita seleccionar entre orden ascendente o descendente
 order = st.sidebar.radio("Ordenar por índice de calidad de vida:", ("Ascendente", "Descendente"))
@@ -29,5 +29,5 @@ chart = alt.Chart(df_bar).mark_bar().encode(
 # Mostrar el gráfico en Streamlit
 st.altair_chart(chart, use_container_width=True)
 
-st.page_link("pages/2_Tabla_de_datos.py", label="⬅️ Regresar")
-st.page_link("pages/4_Histograma.py", label="Siguiente ➡️")
+st.page_link("pages/page_2.py", label="⬅️ Regresar")
+st.page_link("pages/page_4.py", label="Siguiente ➡️")
