@@ -16,4 +16,4 @@ Exploraremos los siguientes:
 - Índice climático.
 """)
 
-st.page_link("pages/2_Tabla_de_datos.py", label="Siguiente ➡️")
+st.page_link("pages/page_2.py", label="Siguiente ➡️")
