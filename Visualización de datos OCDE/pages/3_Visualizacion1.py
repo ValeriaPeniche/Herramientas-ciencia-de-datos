@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # Cargar datos
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/OECD.HEALTH_STATUS.csv")
+    df = pd.read_csv("Datos/OECD.HEALTH_STATUS.csv")
     return df
 
 df = load_data()
