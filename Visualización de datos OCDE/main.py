@@ -8,5 +8,4 @@ st.set_page_config(
 
 st.title("📊 Visualización de la Esperanza de Vida en Países de la OCDE")
 
-st.sidebar.success("Selecciona una página arriba para comenzar.")
 
